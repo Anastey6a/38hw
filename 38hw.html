@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="birthdate">Дата народження:</label>
+        <input type="text" id="birthdate" name="birthdate"><br>
+
+        <label>Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label><br>
+
+        <label for="city">Місто:</label>
+        <select id="city" name="city">
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+        </select><br>
+
+        <label for="address">Адреса:</label>
+        <textarea id="address" name="address"></textarea><br>
+
+        <label>Мови, якими володієте:</label><br>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">Англійська</label><br>
+        <input type="checkbox" id="russian" name="languages" value="russian">
+        <label for="russian">Російська</label><br>
+
+        <button type="button" id="saveButton">Зберегти</button>
+    </form>
+
+    <div id="tableContainer"></div>
+
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
